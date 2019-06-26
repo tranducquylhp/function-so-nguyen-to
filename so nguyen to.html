@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function isPrime(x){
+            x=parseInt(x);
+            for (let i=2;i<Math.sqrt(x);i++){
+                if (x%i==0) return false;
+            }
+            return true;
+        }
+        alert(isPrime(15));
+    </script>
+</body>
+</html>
